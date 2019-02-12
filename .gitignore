@@ -1,0 +1,4 @@
+*.sql
+config.php
+.htaccess
+enviroment.php
