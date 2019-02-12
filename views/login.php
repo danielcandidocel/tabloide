@@ -7,7 +7,11 @@
         </div>
         <div class="login-form2">
             <form method="POST" action="<?php echo BASE_URL;?>usuarios/login">
+<<<<<<< HEAD
                 <label>Nome:</label>
+=======
+                <label>Name:</label>
+>>>>>>> 4ec47b40e09d5c1dc41b1466aa72862b180bddc6
                 <input type="text" name="name" />
                 <label>Senha:</label>
                 <input type="password" name="senha" />                                
