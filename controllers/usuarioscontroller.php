@@ -3,7 +3,7 @@
 class usuariosController extends controller {
     
    public function logout() {
-        unset($_SESSION['xmlLogin']);
+        unset($_SESSION['tbLogin']);
         header("Location: ".BASE_URL);        
     }
     public function login() {   
@@ -18,13 +18,13 @@ class usuariosController extends controller {
                 if($f->verifyUser($login, $senha)) {
                     //getUser -> seleciona o id e nome do usuario após logar
                     $dados['user'] = $f->getUser($login, $senha);
-                    $_SESSION['xmlLogin'] = $dados['user']['id'];
+                    $_SESSION['tbLogin'] = $dados['user']['id'];
                     //getDadosUser -> seleciona as informações do usuario
-                    $dados['dadosUser'] = $f->getDadosUser($_SESSION['xmlLogin']);                
+                    $dados['dadosUser'] = $f->getDadosUser($_SESSION['tbLogin']);                
                    
                         
                         $ip = $_SERVER['REMOTE_ADDR'];
-                        $f->setIpUser($ip, $_SESSION['xmlLogin']);
+                        $f->setIpUser($ip, $_SESSION['tbLogin']);
                         header("Location: ".BASE_URL);  
                     
                    
