@@ -7,12 +7,12 @@
         </div>
         <div class="login-form2">
             <form method="POST" action="<?php echo BASE_URL;?>usuarios/login">
-                <label>Login:</label>
+                <label>Name:</label>
                 <input type="text" name="name" />
                 <label>Senha:</label>
                 <input type="password" name="senha" />                                
                 <!-- <input type="button" value="Entrar" class="btn-primary" id="button-login" onclick="logar()"/> -->
-                <input type="submit" value="Entrar" class="btn-primary" id="button-login" />
+                <input type="submit" value="Entrar" class="btn-danger" id="button-login" />
             </form>
             <?php 
                 if (isset($erroLogin) && !empty($erroLogin)) {
