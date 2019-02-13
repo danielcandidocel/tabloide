@@ -1,5 +1,4 @@
 
-
 //função de login
 
 function logar(){
@@ -34,8 +33,26 @@ function logar(){
                 }
             }
         });
-   }
+   }   
 }
-
-
+function cadastroProduto(){
+    $('#cadastro').modal('show');
+}
+function previewImagem(){
+    
+    var imagem = document.querySelector('input[name=imagemProduto').files[0];
+    var preview = document.querySelector('img[name=fotoProduto]');
+    var reader = new FileReader();
+    reader.onloadend = function() {        
+        preview.src = reader.result;
+    }
+    if(imagem){
+        reader.readAsDataURL(imagem);
+    }else {
+        preview.src = "";
+    }
+}
+$('#fotoProduto').click(function(){
+  $('#imagemProduto').click();
+});
 

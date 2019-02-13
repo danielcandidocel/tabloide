@@ -13,15 +13,15 @@
         <!--        FontAwesome-->
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" />
         
-        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/style-login.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/style-painel.css" />
         
-        <title>XML</title>
+        <title>Tabloide</title>
     </head>
 <body>
     <header>
 
     </header>
-
+    <a href="<?php BASE_URL?>produtos/listar">Listar Produtos</a>
 <?php $this->loadViewinTemplate($viewName, $viewData); ?>
     <footer>
         
@@ -31,6 +31,6 @@
     </script>    
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
     <script src="<?php echo BASE_URL; ?>assets/js/script.js" type="text/javascript"></script>    
-
+    <script src="<?php echo BASE_URL; ?>assets/js/pluginMask.js" type="text/javascript"></script>  
 </body>
 </html>

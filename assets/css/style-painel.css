@@ -8,3 +8,12 @@ header{
     padding: 0;
 }
 /*CSS Template Painel*/
+.modal-body form{
+	display: flex;
+	flex-direction: column;
+}
+.modal-body form img{
+	max-width: 100px;
+	max-height: 150px;
+	cursor: pointer;
+}
