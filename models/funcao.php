@@ -13,6 +13,13 @@ class funcao extends model {
         $id = $this->db->lastInsertId();
         return $id;
     }
+
+     public function excluirProduto($id){
+        $sql = "DELETE FROM produtos WHERE id = :id";
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(":id", $id);        
+        $sql->execute();        
+    }
     
     public function getProdutos(){
         $array = array();

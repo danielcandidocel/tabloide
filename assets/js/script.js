@@ -75,4 +75,25 @@ function previewImagem(){
 $('#fotoProduto').click(function(){
   $('#imagemProduto').click();
 });
-
+function produtoExcluir(id){
+    var html = '';                
+        html += '<p><strong>Alerta!</strong> <br/>';
+        html += '<strong>Deseja Realmente Excluir o Produto?</strong></p><br>';
+        html += '<button type="button" class="btn btn-primary" data-dismiss="modal">Não</button>';
+        html += '<button type="button" class="btn btn-danger" onclick="excluirProduto('+id+')">Sim</button>';
+    $('#modalAlert').html(html);
+    
+    $('#excluir').modal('show');
+}
+function excluirProduto(id){    
+   $.ajax({
+    type:'POST',
+    url:BASE_URL+"produtos/excluir",
+    data:{                
+         id:id           
+     },
+    success:function(){            
+        window.setTimeout("location.href='"+BASE_URL+"produtos/listar'",500); 
+    }
+ });
+}

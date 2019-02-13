@@ -18,17 +18,29 @@ class produtosController extends controller {
 			$t = explode('.', $nome);
 			$ext = $t[1];
 
-			$produtoNome = $_POST['produto-nome'];    			
-			$produtoValor = $_POST['produto-valor'];
+			$produtoNome = $_POST['produto-nome'];
+
+			    			
+			$valor = $_POST['produto-valor'];
+          	$t1 = str_replace('.', '', $valor);
+          	$produtoValor = str_replace(',', '.', $t1);
+			
+
 			$produtoQt = $_POST['produto-qt'];
 			$produtoLimite = $_POST['produto-limite'];
 			$produtoUnidade = $_POST['produto-unidade'];
 
 			$id = $f->cadastrarProsutos($produtoNome, $produtoValor, $produtoQt, $produtoLimite, $produtoUnidade);
     		    		
-    		move_uploaded_file($_FILES['imagemProduto']['tmp_name'], 'assets/images/produtos/'.$id.'png');    		
+    		move_uploaded_file($_FILES['imagemProduto']['tmp_name'], 'assets/images/produtos/'.$id.'.png');    		
    		} 			   
-        
-        $this->loadTemplate('produtos', $dados);
+        header("Location: ".BASE_URL."produtos/listar");  
+        // $this->loadTemplate('produtos', $dados);
+    }
+    public function excluir(){
+    	$f = new funcao();
+    	$id = $_POST['id'];
+    	$f->excluirProduto($id);
+    	return true;
     }
 }
