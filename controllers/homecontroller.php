@@ -13,6 +13,10 @@ class homeController extends controller {
         }
     } 
     
+    public function produto(){
+    	$dados = array();
+    	$this->loadTemplate('produtos', $dados);
+    }
    
     }
 
