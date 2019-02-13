@@ -1,3 +1,4 @@
+
 <?php
 
 class homeController extends controller {
@@ -18,6 +19,10 @@ class homeController extends controller {
     	$this->loadTemplate('produtos', $dados);
     }
    
+   public function jornal(){
+        $dados = array();
+        $this->loadTemplate('tabloide', $dados);
+   }
     }
 
 

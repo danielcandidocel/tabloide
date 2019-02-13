@@ -15,30 +15,31 @@
         
         <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/style-painel.css" />
         
-        <title>XML</title>
+        <title>Tabloide</title>
     </head>
 <body>
     <header>
 
     </header>
-<div id="inteiro">
     <div id="horizontal">
  </div>
+ <div id="inteiro">
+
  <div id ="lateral">
-    <button class="botaoCadastro" > <a href="<?php echo BASE_URL; ?>home/cadastroProduto">Cadastrar Produtos</a></button>
+    <button class="botaoListar" > <a href="<?php echo BASE_URL; ?>produtos/listar"><span class="glyphicon glyphicon-print"></span>
+Listar Produtos</a></button>
 
-    <button class="btn-default botaoLayout" > <a href="<?php echo BASE_URL; ?>home/escolherLayout">Escolher Layout</a></button>
+    <button class="botaoLayout " > <a href="<?php echo BASE_URL; ?>tabloide/criar">Criar Tabloide</a></button>
 
-    <button class="btn-default botaoProdutos" > <a href="<?php echo BASE_URL; ?>home/adicionarProdutos">Adicionar Produtos</a></button>
+    <button class="botaoImprimir" > <a href="<?php echo BASE_URL; ?>usuarios/perfil">Perfil</a></button>
 
-    <button class="btn-default botaoImprimir" > <a href="<?php echo BASE_URL; ?>home/visualizarImprimir">Visualizar e Imprimir</a></button>
-
-    </input>
  </div>
- 
+ <div id="pagina">
+<?php $this->loadViewinTemplate($viewName, $viewData); ?>
+</div>
 
 </div>
-<?php $this->loadViewinTemplate($viewName, $viewData); ?>
+
     <footer>
 
     </footer>
@@ -47,6 +48,6 @@
     </script>    
     <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
     <script src="<?php echo BASE_URL; ?>assets/js/script.js" type="text/javascript"></script>    
-
+    <script src="<?php echo BASE_URL; ?>assets/js/pluginMask.js" type="text/javascript"></script>  
 </body>
 </html>

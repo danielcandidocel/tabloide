@@ -8,8 +8,8 @@ header{
     padding: 0;
 }
 /*CSS Template Painel*/
-
-.botaoCadastro a{
+ 
+.botaoListar a{
 	color: #696969	;
 	text-decoration: none;
 	font-size: 20px;
@@ -18,12 +18,15 @@ header{
 	background-color: #fff; 
 }
 
-.botaoCadastro{
+.botaoListar{
 	border-radius: 20px;
 	border-color: #fff;
 	background-image:url("");
 	background-color: #fff; 
+	width: 240px;
+	height: 60px;
 }
+
 
 .botaoLayout a{
 	color: #696969;
@@ -31,25 +34,18 @@ header{
 	font-size: 20px;
 	font-family: Trebuchet MS, sans-serif;
 	font-weight: bold;
-}
-
-.botaoProdutos{
-	border-radius: 10px;
-	margin-top: 50px;
-}
-
-.botaoProdutos a{
-	color: #696969;
-	text-decoration: none;
-	font-size: 20px;
-	font-family: Trebuchet MS, sans-serif;
-	font-weight: bold;
+	background-color: #fff; 
 
 }
+
 
 .botaoLayout{
-	border-radius: 10px;
+	border-radius: 20px;
 	margin-top: 50px;
+	border-color: #fff;
+	background-color: #fff; 
+	width: 240px;
+	height: 60px;
 }
 
 
@@ -59,33 +55,29 @@ header{
 	font-size: 20px;
 	font-family: Trebuchet MS, sans-serif;
 	font-weight: bold;
-
+	background-color: #fff; 
 }
 
 .botaoImprimir{
-	border-radius: 10px;
+	border-radius: 20px;
 	margin-top: 50px;
+	background-color: #fff; 
+	width: 240px;
+	height: 60px;
+
 }
-
-
-
 
 
 #inteiro{
-	background-color: #fff;
-	width: 100%;
-	height:100%;
-	border-width: 100px;
-	border:20px solid #A75B56;
-	/* margin: 0 0 20 100;
-/*em cima, lado direito, em baixo, lado esquerdo*/
+	display: flex;
 }
-
 
 #lateral{
 	background-color: #A75B56;
 	width: 250px;
 	height:100%;
+	margin-top: 100px;
+	position: fixed;
 	/*border-radius: 5px;*/
 }
 
@@ -93,7 +85,21 @@ header{
 	background-color: #A75B56;
 	width: 100%;
 	height:100px;
-
+	position: fixed;
 }
 
+#pagina{
+	margin-top: 100px;
+	margin-left: 250px;
+}
+
+.modal-body form{
+	display: flex;
+	flex-direction: column;
+}
+.modal-body form img{
+	max-width: 100px;
+	max-height: 150px;
+	cursor: pointer;
+}
 
