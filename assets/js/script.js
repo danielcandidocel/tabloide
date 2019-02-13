@@ -38,6 +38,26 @@ function logar(){
 function cadastroProduto(){
     $('#cadastro').modal('show');
 }
+function cadastrarProdutos(){
+event.preventDefault();
+document.querySelector("#txtCampos").style.display = 'none';
+document.querySelector("#imgCampos").style.display = 'none';
+
+    var imagem = document.querySelector('input[name=imagemProduto').files[0];
+   
+    if ($('input[name="produto-nome"]').val() <= 0 || $('input[name="produto-valor"]').val() <= 0){
+        document.querySelector("#txtCampos").style.display = 'block';
+        $('#campos').modal('show');
+    } else  if(imagem){
+        document.getElementById("formProduto").submit();
+    }else {
+        document.querySelector("#imgCampos").style.display = 'block';
+        $('#campos').modal('show');
+    }
+   
+}
+
+
 function previewImagem(){
     
     var imagem = document.querySelector('input[name=imagemProduto').files[0];

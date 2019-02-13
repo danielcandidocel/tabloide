@@ -1,7 +1,33 @@
 <?php
 class funcao extends model {
     
-        //verifica o login do usuario
+    public function cadastrarProsutos($produtoNome, $produtoValor, $produtoQt, $produtoLimite, $produtoUnidade){
+        $sql = "INSERT INTO produtos SET nome = :nome, valor = :valor, qt = :qt, limite = :limite, unidade = :unidade";
+        $sql = $this->db->prepare($sql);
+        $sql->bindValue(":nome", $produtoNome);
+        $sql->bindValue(":valor", $produtoValor);
+        $sql->bindValue(":qt", $produtoQt);
+        $sql->bindValue(":limite", $produtoLimite);
+        $sql->bindValue(":unidade", $produtoUnidade);        
+        $sql->execute();
+        $id = $this->db->lastInsertId();
+        return $id;
+    }
+    
+    public function getProdutos(){
+        $array = array();
+        
+        $sql = "SELECT * FROM produtos";
+        $sql = $this->db->prepare($sql);        
+        $sql->execute();
+        
+        if($sql->rowCount() > 0) {
+            $array = $sql->fetchAll(PDO::FETCH_ASSOC);
+        }        
+        return $array;
+    }
+    //verifica o login do usuario
+    
     public function verifyUser($login, $senha){
        
         $sql = "SELECT * FROM user WHERE login = :login AND senha = :pass";
