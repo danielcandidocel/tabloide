@@ -30,12 +30,12 @@ class usuariosController extends controller {
                    
                     }  else {
                         $dados['erroLogin'] = "Login e/ou Senha Incorretos.";
-                        $this->loadTemplate('login', $dados); 
+                        $this->loadTemplateLogin('login', $dados); 
                     }  
                 } else {
                  
                     $dados['erroLogin'] = "Preencha Todos os Campos.";
-                    $this->loadTemplate('login', $dados);           
+                    $this->loadTemplateLogin('login', $dados);           
                 }        
         }
      
