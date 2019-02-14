@@ -23,8 +23,8 @@ header{
 	border-color: #fff;
 	background-image:url("");
 	background-color: #fff; 
-	width: 240px;
-	height: 60px;
+	width: 240%;
+	height: 8%;
 }
 
 
@@ -44,8 +44,8 @@ header{
 	margin-top: 50px;
 	border-color: #fff;
 	background-color: #fff; 
-	width: 240px;
-	height: 60px;
+	width: 240%;
+	height: 8%;
 }
 
 .botaoLayout2 a{
@@ -64,8 +64,8 @@ header{
 	margin-top: 50px;
 	border-color: #fff;
 	background-color: #fff; 
-	width: 240px;
-	height: 60px;
+	width: 240%;
+	height: 8%;
 }
 
 
@@ -82,23 +82,25 @@ header{
 	border-radius: 20px;
 	margin-top: 50px;
 	background-color: #fff; 
-	width: 240px;
-	height: 60px;
+	width: 240%;
+	height: 8%;
 	text-decoration: none;
 	border-radius: 20px;
 }
 
 .botaoSair a{
 	text-decoration: none;
+	background-color: #fff
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: bold;
 }
 
 
 .botaoSair {
-	height: 50px;
-	width: 100px;
+	height: 5%;
+	width: 30%;
 	border-radius: 20px;
 	background-color: #fff;
-
 }
 
 #lateral3{
@@ -108,11 +110,14 @@ header{
 	height: 100%; 
 	justify-content: space-around;
 	padding-bottom: 100px;
-	margin-top: 100px;
+	margin-top: 50px;
 	position: fixed;
 	width: 250px;
 
 }
+
+
+
 
 
 
@@ -121,19 +126,20 @@ header{
 }
 
 #lateral{
-	width: 100%;
+	width: 100px;
 }
 
 #horizontal{
-	background-color: #A75B56;
+	background-color: #A75B56	;
 	width: 100%;
-	height:100px;
+	height:50px;
 	position: fixed;
 }
 
 #pagina{
 	margin-top: 100px;
 	margin-left: 250px;
+	width: 78%;
 }
 
 .modal-body form{
@@ -152,3 +158,32 @@ header{
 	max-width: 100px;
 	max-height: 150px;
 }
+
+h1{
+	color: white;
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: bold;
+	margin-top: -0.2px;
+}
+
+.glyphicon.glyphicon-th-list{
+	color:#FF8C00;
+}
+
+.glyphicon.glyphicon-th{
+	color:#FF8C00;
+}
+
+.glyphicon.glyphicon-file{
+	color:#FF8C00;
+}
+
+
+.glyphicon.glyphicon-user{
+	color:#FF8C00;
+}
+
+.glyphicon.glyphicon-off{
+	color:#FF0000	;
+}
+

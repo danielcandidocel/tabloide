@@ -12,8 +12,7 @@ class usuariosController extends controller {
         
         if(isset($_POST['name']) && !empty ($_POST['name']) && isset($_POST['senha']) && !empty ($_POST['senha'])) {
             $login = addslashes($_POST['name']);
-            $senha = addslashes($_POST['senha']);
-               
+            $senha = addslashes($_POST['senha']);              
                 //verifyUser-> verifica o login do usuario
                 if($f->verifyUser($login, $senha)) {
                     //getUser -> seleciona o id e nome do usuario após logar
@@ -38,7 +37,11 @@ class usuariosController extends controller {
                     $this->loadTemplate('login', $dados);           
                 }        
         }
-     
-    }
+        public function perfil() {
+        $dados = array();
 
+        $this->loadTemplate('usuarios', $dados);
+ }
+}
 
+   

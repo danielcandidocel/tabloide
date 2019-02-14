@@ -22,26 +22,31 @@
 
     </header>
     <div id="horizontal">
+        <center>
+        <h1>
+            Tabloide Online
+        </h1>
+        </center>
  </div>
  <div id="inteiro">
 
 <div id="lateral3">
  <div id ="lateral">
-    <button class="botaoListar" > <a href="<?php echo BASE_URL; ?>produtos/listar"><span class="glyphicon glyphicon-th-list"></span>
+    <button class="botaoListar"> <a href="<?php echo BASE_URL; ?>produtos/listar"><span class="glyphicon glyphicon-th-list"></span>
 Listar Produtos</a></button>
 
-    <button class="botaoLayout " > <a href="<?php echo BASE_URL; ?>tabloide/criar"><span class="glyphicon glyphicon-th
+    <button class="botaoLayout "> <a href="<?php echo BASE_URL; ?>tabloide/criar"><span class="glyphicon glyphicon-th
 "></span> Criar Tabloide</a></button>
     
-    <button class="botaoLayout2" > <a href="<?php echo BASE_URL; ?>tabloide/meustabloides"><span class="glyphicon glyphicon-th
-"></span>Meus Tabloides</a></button>
+    <button class="botaoLayout2" > <a href="<?php echo BASE_URL; ?>tabloide/meustabloides"><span class="glyphicon glyphicon-file
+"></span> Meus Tabloides</a></button>
 
     <left><button class="botaoPerfil" > <a href="<?php echo BASE_URL; ?>usuarios/perfil"><span class="glyphicon glyphicon-user    
  
-"></span>      Perfil</a></button>
+"></span> Perfil</a></button>
 </div>
     <div id="lateral2">
-           <center> <button class="botaoSair" > <a href="<?php echo BASE_URL; ?>usuarios/sair"><span class="glyphicon glyphicon-off 
+           <center> <button class="botaoSair" > <a href="<?php echo BASE_URL; ?>usuarios/logout"><span class="glyphicon glyphicon-off 
 "></span>   Sair</a></button></center>
     </div>
  </div>
