@@ -1,6 +1,8 @@
 <div class="container">
-	<button onclick="cadastroProduto()" class="btn-primary">Cadastrar Produto</button>
-  <h2>Lista de Produtos Cadastrados</h2>        
+	<div class="titulo-produtos">
+  		<h2>Lista de Produtos Cadastrados</h2>     
+  		<button onclick="cadastroProduto()" class="btn btn-primary botoes">Cadastrar Produto</button>   
+  	</div>
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -23,7 +25,7 @@
         <td><?php echo $prod['qt'];?></td>
         <td><?php echo $prod['limite'];?></td>
         <td><?php echo $prod['unidade'];?></td>
-        <td><button class="btn btn-danger">Excluir</button></td>
+        <td><button class="btn btn-danger" onclick="produtoExcluir(<?php echo $prod['id'];?>)">Excluir</button></td>
       </tr>
   <?php endforeach; 
 endif;?>
@@ -125,6 +127,31 @@ endif;?>
     	<strong>Alerta!</strong> <br/>
     	<strong id="txtCampos">Preencha Todos os Campos Obrigatórios!</strong>
     	<strong id="imgCampos">Favor Escolha uma Imagem para o Produto.</strong> 
+  	</div>
+
+          	
+      </div>
+      <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div> -->
+    <!-- </div> -->
+
+  </div>
+</div>
+<!--Modal Excluir Produtos-->
+<div class="modal fade" role='dialog' id='excluir' >
+<div class="modal-dialog">
+
+    <!-- <div class="modal-content" id="modalFotoPerfil">
+      <div class="modal-header">
+        
+        
+      </div> -->
+      <div class="modal-body">   
+
+           
+	<div class="alert alert-warning" id="modalAlert">		             
+    	
   	</div>
 
           	
