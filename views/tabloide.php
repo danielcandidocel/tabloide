@@ -1,2 +1,1 @@
-tabloide.php
-
+criar tabloide
