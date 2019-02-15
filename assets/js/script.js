@@ -117,8 +117,8 @@ function criarTabloide(){
      });    
 }
 function layout(id){
-    var id = id.value;
-    if (id === "0") {
+    var l = id.value;
+    if (l === "0") {
         document.querySelector("#qtde_produtos").style.display = 'none';
         document.querySelector("#add_produtos").style.display = 'none';
     } else {
@@ -126,8 +126,8 @@ function layout(id){
     }
 }
 function qtde(id){
-    var id = id.value; 
-    if (id === "0") {
+    var qt = id.value;
+    if (qt === "0") {
         document.querySelector("#add_produtos").style.display = 'none';
     } else {
         document.querySelector("#add_produtos").style.display = 'block';
@@ -135,7 +135,8 @@ function qtde(id){
 }
 function teste(){
     var layout = $('select[name=templates]').val(); 
-    var qtde = $('select[name=qtde]').val(); 
-    alert(layout);
-    alert(qtde);
+    var qtde = $('select[name=qt]').val(); 
+    
+    window.setTimeout("location.href='"+BASE_URL+"tabloide/imprimirTabloide?layout="+layout+"'");
+    
 }

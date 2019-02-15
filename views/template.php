@@ -92,7 +92,7 @@ Listar Produtos</a></button>
                     <div class="form-group" id="qtde_produtos">
                         <label class="col-md-5">Selecione a Quantidade de Produtos:</label>
                         <div class="col-md-7">
-                            <select name="qtde" id="qtde" onchange="javascript:qtde(this);">
+                            <select name="qt" id="qt" onchange="javascript:qtde(this);">
                                 <option value="0"></option>
                                 <option value="6">6</option>
                                 <option value="8">8</option>
