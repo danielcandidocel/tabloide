@@ -97,3 +97,45 @@ function excluirProduto(id){
     }
  });
 }
+function criarTabloide(){
+ 
+    $('#escolherLayout').modal('show');
+    $.ajax({
+        url:BASE_URL+"template/getLayout",        
+        dataType:'json',
+        success:function(json){ 
+            var html = '<option value="0"></option>';
+            cat = json.length;
+            for(var i in json){
+                // html += '';
+                html += '<option value="'+json[i].id+'">'+json[i].nome+'</option>';
+            }
+            $('#templates').html(html);
+        }, error:function(erro){
+            console.log(erro);
+        }
+     });    
+}
+function layout(id){
+    var id = id.value;
+    if (id === "0") {
+        document.querySelector("#qtde_produtos").style.display = 'none';
+        document.querySelector("#add_produtos").style.display = 'none';
+    } else {
+        document.querySelector("#qtde_produtos").style.display = 'block';
+    }
+}
+function qtde(id){
+    var id = id.value; 
+    if (id === "0") {
+        document.querySelector("#add_produtos").style.display = 'none';
+    } else {
+        document.querySelector("#add_produtos").style.display = 'block';
+    }
+}
+function teste(){
+    var layout = $('select[name=templates]').val(); 
+    var qtde = $('select[name=qtde]').val(); 
+    alert(layout);
+    alert(qtde);
+}

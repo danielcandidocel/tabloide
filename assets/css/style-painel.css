@@ -313,6 +313,13 @@ h1{
 	font-size: 12px;
 	height: 30px;
 }
+#qtde_produtos{
+	display:none;
+}
+#add_produtos{
+	margin-top: 20px;
+	display:none;
+}
 /*@media (max-width:800px) {
     #logo1{
 		display: none;

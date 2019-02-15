@@ -1,5 +1,17 @@
 <?php
 class funcao extends model {
+
+    public function getNomeLayout(){
+        $array = array();
+        $sql = "SELECT * FROM templates";
+        $sql = $this->db->prepare($sql);        
+        $sql->execute();
+        
+        if($sql->rowCount() > 0) {
+            $array = $sql->fetchAll(PDO::FETCH_ASSOC);
+        }        
+        return $array;
+    }
     
     public function cadastrarProsutos($produtoNome, $produtoValor, $produtoQt, $produtoLimite, $produtoUnidade){
         $sql = "INSERT INTO produtos SET nome = :nome, valor = :valor, qt = :qt, limite = :limite, unidade = :unidade";

@@ -12,4 +12,9 @@ class tabloideController extends controller {
 
         $this->loadTemplate('tabloide', $dados);
  }
+ 	public function imprimirTabloide($layout){
+ 		$dados = array();
+
+        $this->loadTemplate('imprimirTabloide', $dados);		
+ 	}
 }
