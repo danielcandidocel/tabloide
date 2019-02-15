@@ -195,7 +195,7 @@ h1{
 	
 	height: auto;
 	width: 100%;
-	margin-left: 10%;
+	margin-left: 8%;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
@@ -229,12 +229,89 @@ h1{
 	max-height: 150px;
 }
 .template_produtos{
+	padding: 15px;
 	position: absolute;
 	margin-top: 350px;
-	margin-left: 70px;
-	height: 740px;
+	margin-left: 55px;
+	height: 810px;
+	width: 730px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.produtos{
+	display: flex;
+	justify-content: space-around;
 	width: 730px;
-	background: red;
+	height: 135px;
+}
+.produtos_produto{
+	display: flex;
+	flex-direction: row;
+	height: 135px;
+	max-height: 135px;	
+	width: 240px;
+	background: #FFF;
+	border-radius: 15px;
+}
+.produtos_img{
+	display: flex;
+	align-items: center;
+	height: 135px;
+	max-height: 135px;	
+	width: 120px;
+}
+.produtos_info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 135px;
+	max-height: 135px;	
+	width: 120px;	
+}
+.produtos_desc{
+	height: 67px;
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: 18px;
+	color: #00008B;
+}
+.produto_price{
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+	height: 68px;
+	width: 120px;
+	font-size: 12px;
+	color: red;
+	font-weight: bold;
+}
+.produto_price #r{
+	align-self: flex-start;
+	margin-left: 50%;
+}
+.produto_price_valor {
+	position: absolute;
+}
+.produto_price_valor #v1{
+	font-size: 50px;
+}
+.produto_price_valor #v2{
+	font-size: 20px;
+	align-self: flex-start;
+	position: absolute;
+	margin-top: -60px;
+	margin-left: 40px;
+}
+.dados{
+	text-align: left;
+	font-size: 12px;
+	height: 30px;
 }
 /*@media (max-width:800px) {
     #logo1{

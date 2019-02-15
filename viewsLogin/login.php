@@ -14,7 +14,7 @@
                 <label>Senha:</label>
                 <input type="password" name="senha" />                                
                 <!-- <input type="button" value="Entrar" class="btn-primary" id="button-login" onclick="logar()"/> -->
-                <input type="submit" value="Entrar" class="btn-danger" id="button-login" />
+                <input type="submit" value="Entrar" class="btn btn-primary" id="button-login" />
             </form>
             <?php 
                 if (isset($erroLogin) && !empty($erroLogin)) {
