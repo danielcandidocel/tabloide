@@ -45,6 +45,19 @@ class funcao extends model {
         }        
         return $array;
     }
+    public function getProduto($id){
+        $array = array();
+        
+        $sql = "SELECT * FROM produtos WHERE id = :id";        
+        $sql = $this->db->prepare($sql);    
+        $sql->bindValue(":id", $id);    
+        $sql->execute();
+        
+        if($sql->rowCount() > 0) {
+            $array = $sql->fetch(PDO::FETCH_ASSOC);
+        }        
+        return $array;
+    }
     //verifica o login do usuario
     
     public function verifyUser($login, $senha){

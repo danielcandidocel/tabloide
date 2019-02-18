@@ -9,6 +9,7 @@
         <!-- 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        <!-- <script src="<?php echo BASE_URL; ?>assets/js/script.js" type="text/javascript"></script>   -->
         <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/jquery.min.js"></script> 
         <!--        FontAwesome-->
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" />
@@ -68,7 +69,7 @@ Listar Produtos</a></button>
 </body>
 </html>
 
-<!--Modal Evento-->
+<!--Modal Criar Tabloide-->
 <div class="modal fade" role='dialog' id='escolherLayout'>
 <div class="modal-dialog">
 
@@ -94,19 +95,19 @@ Listar Produtos</a></button>
                         <div class="col-md-7">
                             <select name="qt" id="qt" onchange="javascript:qtde(this);">
                                 <option value="0"></option>
-                                <option value="6">6</option>
-                                <option value="8">8</option>
+                                <option value="15">15</option>
+                                <!-- <option value="8">8</option>
                                 <option value="10">10</option>
                                 <option value="12">12</option>
                                 <option value="16">16</option>
-                                <option value="20">20</option>
+                                <option value="20">20</option> -->
                             </select>    
                         </div>
                     </div><br/> <br/> <br/>
                     <div class="form-group" id="add_produtos">
                         <div class="col-md-5"></div>
                         <div class="col-md-7">
-                            <button class="btn btn-success" onclick="teste()">Adicionar Produtos</button>
+                            <span class="btn btn-success" onclick="addProdutos()">Adicionar Produtos</span>
                         </div>
                     </div>
                 </div>                 
@@ -118,5 +119,63 @@ Listar Produtos</a></button>
     </div>
     </div>
 
+  </div>
+</div>
+
+<!--Modal Incluir Produtos-->
+<div class="modal fade" role='dialog' id='adicionarProdutos'>
+<div class="modal-dialog" style="height:90%;">
+
+    <div class="modal-content" id="layout_adicionar_produtos" style=" width:1000px; margin-left: -100px">
+     <!--  <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Escolher Produtos</h4>
+      </div> -->
+      <div class="produtos_adicionados">
+            <h3>Produtos Adicionados <span id="qtAdd"></span></h3>   
+            <div class="relacao">
+               
+            </div>
+            <p class="btn btn-success" onclick="gerarTabloide()">Criar Tabloide</p>     
+      </div>
+      <div class="produtos_adicionar">
+        <div class="modal-body" style="height: 100%; overflow: auto"> 
+           <div class="container" style="max-width: 100%;">
+              <h2>Adicionar Produtos</h2>               
+              <input class="form-control" id="myInput" type="text" placeholder="Pesquisar..">
+              <br>
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  
+                </tbody>
+              </table>
+             
+            </div>                
+        </div>
+    </div>
+        </div>
+    <div class="modal-footer">
+       
+    </div>
+    </div>
+
+  </div>
+</div>
+<!--Modal -->
+<div class="modal fade" role='dialog' id='alerta' >
+<div class="modal-dialog">    
+    <div class="modal-body">    
+        <button type="button" class="close" data-dismiss="modal">&times;</button>          
+        <div class="alert alert-danger" id="alertas">                    
+        
+        </div>            
+    </div>    
   </div>
 </div>

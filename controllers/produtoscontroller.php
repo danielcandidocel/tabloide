@@ -10,6 +10,24 @@ class produtosController extends controller {
         $this->loadTemplate('produtos', $dados);
         
     } 
+    public function getProdutos() {
+        $dados = array();
+        $f = new funcao();
+
+        $dados = $f->getProdutos();
+        echo json_encode($dados);        
+        exit;
+        
+    } 
+    public function getProduto() {
+        $dados = array();
+        $f = new funcao();
+        $id = addslashes($_POST['id']);
+        $dados = $f->getProduto($id);
+        echo json_encode($dados);        
+        exit;
+        
+    }
     public function cadastrar(){
     	$dados = array();
     	$f = new funcao();

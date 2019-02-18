@@ -1,3 +1,4 @@
+
 <style type="text/css" media="print">
     #lateral{display:none;}
     #lateral2{display:none;}
@@ -6,9 +7,7 @@
     .layout_tabloide{margin-left: 0%;	padding: 0px;}
     #pagina{max-width: 100%;margin-top: 0px;margin-left: 0px;}
     .print{display: none}
-    .produtos_produto{
-    	background: #FFF;
-    }
+
 
 </style>
 <?php 
@@ -26,320 +25,25 @@
 			</div>			
 		</div>
 		<div class="template_produtos">
-			<div class="produtos">
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-			</div>
-			<div class="produtos">
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-			</div>
-			<div class="produtos">
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-			</div>
-			<div class="produtos">
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-			</div>
-			<div class="produtos">
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-				<div class="produtos_produto">
-					<div class="produtos_img">
-						<img src="<?php echo BASE_URL;?>assets/images/produtos/10.png">	
-					</div>
-					<div class="produtos_info">
-						<div class="produtos_desc">
-							<span>
-								Margarina Delicia 500gr
-							</span>
-						</div>
-						<div class="produto_price">
-							<span id="r">R$</span>
-							<div class="produto_price_valor">
-								<span id="v1">2,</span>
-								<span id="v2">99</span>	
-							</div>
-							
-						</div>	
-					</div>					
-				</div>
-			</div>
-			<div class="dados">
-				<p>Obs:</p>
-				<p>Validade:</p>
-			</div>
+			<!-- <div class="produtos">
+                <div class="produtos_produto">
+                    <div class="produtos_img">
+	                    <img src="<'+BASE_URL+'assets/images/produtos/10.png">
+                    </div>
+                    <div class="produtos_info">
+                   		<div class="produtos_desc">
+		                    <span>Margarina Delicia 500gr</span>
+                    	</div>
+	                    <div class="produto_price">
+		                    <span id="r">R$</span>
+		                    <div class="produto_price_valor">
+			                    <span id="v1">2,</span>
+			                    <span id="v2">99</span>
+		                    </div>
+		                </div>
+	                </div>
+                </div>
+            </div> -->
 		</div>
 		<img src="<?php echo BASE_URL;?>assets/images/templates/<?php echo $layout;?>.png">
 		
@@ -349,3 +53,9 @@
 <div class="print">
     <a href="javascript:self.print()"><button class="btn btn-primary">IMPRIMIR</button></a>
 </div>
+<script type='text/javascript'>
+$(window).load(function() {
+
+listaProdutos();
+})
+</script>
